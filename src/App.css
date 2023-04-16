@@ -27,7 +27,13 @@
    padding: 2rem 0;
   }
  }
-
+ 
+ /*Styling specific to our maps*/
+ .map-container {
+  position: absolute;
+  height:500px;
+  width:100%;
+}
  /* Tab Navigation */
 ul.nav {
   width: 60%;
