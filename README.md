@@ -1,6 +1,8 @@
 # react-map-tutorial
 Sourcecode for my tutorial series on medium "Web Mapping with React.js". This contains a simple Tab Component react application which will be used as the template which to build out each Map Component in each turorial part. 
 
+Special thank you to Chinedu Imoh for his work on his How to build a tab component in React article which served as the foundation for this tutorial.
+
 At the time of creation my Node and NPM versions were:
 - Node: 14.20.0
 - Package Manager: npm 6.14.17
