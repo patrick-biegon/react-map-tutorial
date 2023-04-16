@@ -1,6 +1,6 @@
 import "./App.css";
 import Tabs from "./Components/TabComponent/Tabs";
-function App() {
+const App = () => {
   return (
     <div className="App">
       <Tabs />
@@ -8,4 +8,3 @@ function App() {
   );
 }
 export default App;
-//https://blog.logrocket.com/how-to-build-tab-component-react/

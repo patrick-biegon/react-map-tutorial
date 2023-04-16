@@ -1,36 +1,35 @@
 import React, { useState } from "react";
-import MapboxComponent from "../MapComponents/MapboxComponent.js";
-import TabNavItem from "../TabNavigationUtil/TabNavItem.js";
-import TabContent from "../TabNavigationUtil/TabContent.js";
+import TabNavItem from "./TabNavItem.js";
+import TabContent from "./TabContent.js";
  
 const Tabs = () => {
-  const [activeTab, setActiveTab] = useState("tab1");
+  const [activeTab, setActiveTab] = useState("mapbox");
  
   return (
     <div className="Tabs">
       <ul className="nav">
-        <TabNavItem title="Mapbox" id="tab1" activeTab={activeTab} setActiveTab={setActiveTab}/>
-        <TabNavItem title="Leaflet" id="tab2" activeTab={activeTab} setActiveTab={setActiveTab}/>
-        <TabNavItem title="OpenLayers" id="tab3" activeTab={activeTab} setActiveTab={setActiveTab}/>
-        <TabNavItem title="ArcGIS" id="tab4" activeTab={activeTab} setActiveTab={setActiveTab}/>
-        <TabNavItem title="Carto" id="tab5" activeTab={activeTab} setActiveTab={setActiveTab}/>
+        <TabNavItem title="Mapbox" id="mapbox" activeTab={activeTab} setActiveTab={setActiveTab}/>
+        <TabNavItem title="Leaflet" id="leaflet" activeTab={activeTab} setActiveTab={setActiveTab}/>
+        <TabNavItem title="OpenLayers" id="openlayers" activeTab={activeTab} setActiveTab={setActiveTab}/>
+        <TabNavItem title="ArcGIS" id="arcgis" activeTab={activeTab} setActiveTab={setActiveTab}/>
+        <TabNavItem title="Carto" id="carto" activeTab={activeTab} setActiveTab={setActiveTab}/>
       </ul>
  
       <div className="outlet">
-        <TabContent id="tab1" activeTab={activeTab}>
-            <MapboxComponent/>
+        <TabContent id="mapbox" activeTab={activeTab}>
+          <p>Mapbox works!</p>
         </TabContent>
-        <TabContent id="tab2" activeTab={activeTab}>
-          <p>Tab 2 works!</p>
+        <TabContent id="leaflet" activeTab={activeTab}>
+          <p>Leaflet works!</p>
         </TabContent>
-        <TabContent id="tab3" activeTab={activeTab}>
-          <p>Tab 3 works!</p>
+        <TabContent id="openlayers" activeTab={activeTab}>
+          <p>OpenLayers works!</p>
         </TabContent>
-        <TabContent id="tab4" activeTab={activeTab}>
-          <p>Tab 4 works!</p>
+        <TabContent id="arcgis" activeTab={activeTab}>
+          <p>ArcGIS works!</p>
         </TabContent>
-        <TabContent id="tab5" activeTab={activeTab}>
-          <p>Tab 5 works!</p>
+        <TabContent id="carto" activeTab={activeTab}>
+          <p>Carto works!</p>
         </TabContent>
       </div>
     </div>
