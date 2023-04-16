@@ -1,6 +1,9 @@
-# Getting Started with Create React App
+# react-map-tutorial
+Sourcecode for my tutorial series on medium "Web Mapping with React.js". This contains a simple Tab Component react application which will be used as the template which to build out each Map Component in each turorial part. 
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+At the time of creation my Node and NPM versions were:
+- Node: 14.20.0
+- Package Manager: npm 6.14.17
 
 ## Available Scripts
 
