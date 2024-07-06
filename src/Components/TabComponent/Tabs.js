@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import TabNavItem from "./TabNavItem.js";
 import TabContent from "./TabContent.js";
+import MapboxComponent from "../MapboxComponent/MapboxComponent.js";
+import LeafletComponent from "../LeaftletComponent/LeafletComponent.js";
  
 const Tabs = () => {
   const [activeTab, setActiveTab] = useState("mapbox");
@@ -14,13 +16,13 @@ const Tabs = () => {
         <TabNavItem title="ArcGIS" id="arcgis" activeTab={activeTab} setActiveTab={setActiveTab}/>
         <TabNavItem title="Carto" id="carto" activeTab={activeTab} setActiveTab={setActiveTab}/>
       </ul>
- 
+
       <div className="outlet">
         <TabContent id="mapbox" activeTab={activeTab}>
-          <p>Mapbox works!</p>
+          <MapboxComponent></MapboxComponent>
         </TabContent>
         <TabContent id="leaflet" activeTab={activeTab}>
-          <p>Leaflet works!</p>
+         <LeafletComponent></LeafletComponent>
         </TabContent>
         <TabContent id="openlayers" activeTab={activeTab}>
           <p>OpenLayers works!</p>
